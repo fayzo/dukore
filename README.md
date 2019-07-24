@@ -1,2 +1,2 @@
-# tweet-clone
+# twt-clone
 # dukore
