@@ -1,2 +1,1 @@
-# twt-clone
-# dukore
+# abdul ibyo uri kunkorera sibyo we Suleiman 
