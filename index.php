@@ -18,7 +18,7 @@ include('core/init.php');
 	<link rel="stylesheet" href="assets/css/style-complete.css"/>
 </head>
 	<!--Helvetica Neue-->
-<body style="margin-top:100px";>
+<body>
 <div class="front-img">
 	<img src="assets/images/background.jpg">
 </div>	

@@ -57,7 +57,7 @@ if (isset($_POST['tweet'])) {
 		  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>  	   -->
 	</head>
 	<!--Helvetica Neue-->
-<body style="margin-top:100px;">
+<body>
 <div class="wrapper">
 <!-- header wrapper -->
 <div class="header-wrapper">

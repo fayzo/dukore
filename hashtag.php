@@ -27,7 +27,7 @@ if (isset($_GET['hashtag']) && !empty($_GET['hashtag'])) {
 
     </head>
 <!--Helvetica Neue-->
-<body style="margin-top:100px;">
+<body>
 <div class="wrapper">
 <!-- header wrapper -->
 <div class="header-wrapper">	
