@@ -8,7 +8,8 @@ include('classes/Message.php');
 include('classes/Trending.php');
 include('classes/Notification.php');
 
-define('BASE_URL','http://localhost/tweet/');
+define('BASE_URL','http://localhost/dukore/');
+// define('BASE_URL','http://localhost/tweet/');
 define('NO_PROFILE_IMAGE_URL','assets/images/defaultprofileimage.png');
 define('NO_COVER_IMAGE_URL','assets/images/defaultCoverImage.png');
 
