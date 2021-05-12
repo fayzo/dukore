@@ -1,0 +1,46 @@
+RewriteEngine On
+# Handle Authorization Header
+
+# Redirect Trailing Slashes If Not A Folder...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !\.php$
+RewriteCond $1 !^(assets|core|include|settings|uploads)
+#RewriteRule ^(.+)/?$ index.php?$1 [NC,L,QSA]
+RewriteRule ^home/?$ home.php [NC,L,QSA]
+RewriteRule ^i.notifications/?$ notification.php [NC,L,QSA]
+
+RewriteRule ^profileEdit/?$ profileEdit.php [NC,L,QSA]
+RewriteRule ^([0-9a-zA-Z_-]+)/?$ profile.php?username=$1 [NC,L,QSA]
+
+RewriteRule ^settings.account/?$ settings/account.php [NC,L]
+RewriteRule ^settings.password/?$ settings/password.php [NC,L]
+RewriteRule ^include/login/?$ include/login.php [NC,L]
+RewriteRule ^include/sign-up/?$ include/sign-up.php [NC,L]
+RewriteRule ^include.logout/?$ include/logout.php [NC,L]
+
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([0-9a-zA-Z_-]+).(following|followers)/?$ $2.php?username=$1 [NC,L,QSA]
+RewriteRule ^([0-9a-zA-Z_-]+).(hashtag)/?$ $2.php?hashtag=$1 [NC,L]
+RewriteRule ^([0-9a-zA-Z_-]+).([0-9a-zA-Z_-]+).(hashtag)/?$ $3.php?hashtag=$1&f=$2 [NC,L]
+
+#Example 1 - Redirect example.com to www.example.com:
+#RewriteEngine On
+#        RewriteCond %{HTTP_HOST} !^www.example.com$ [NC]
+#        RewriteRule ^(.*)$ http://www.example.com/$1 [L,R=301]
+
+#Example 2 - Redirect www.example.com to example.com:
+#RewriteEngine on
+#        RewriteCond %{HTTP_HOST} ^www\.example\.com$
+#        RewriteRule ^/?$ "http\:\/\/example\.com\/" [R=301,L]
+
+#Redirect to example.com/index.php
+#You have a website with the name example.com and you want to redirect all incoming urls that are going to example.com/ to example.com/index.php
+#
+#RewriteEngine On
+#        RewriteCond %{HTTP_HOST} ^example.com$
+#        RewriteRule ^$ http://example.com/index.php [L,R=301]
+
+#Redirect 301 oldfile newfile 
